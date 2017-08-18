@@ -1,0 +1,6 @@
+1. Search a file greater than given size matching the pattern
+2. Get current working directory
+3. Print all environment variables
+4. Check if path  exists
+5. Check if a file exists
+6. program to execute df command
