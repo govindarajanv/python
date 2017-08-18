@@ -1,4 +1,4 @@
-number = 23
+number = 3
 
 running = True
 # Error was thrown by Python when indentation was not correct
@@ -27,3 +27,11 @@ else:
 # Do anything else you want to do here
 
 print('Done')
+
+running = True
+while running:
+    s = input("Enter any string and \"quit\" for quitting this program : ")
+    if s=="quit":
+        break
+    print ("length of the string is",len(s))
+print ("while loop with break is done")
