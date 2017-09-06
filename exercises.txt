@@ -1,7 +1,22 @@
-1. Search a file greater than given size matching the pattern
-2. Get current working directory
-3. Print all environment variables
-4. Check if path  exists
-5. Check if a file exists
-6. program to execute df command
-7. 
+1.  write a program to perform the following
+	- Get two numbers as input
+	- Add those numbers
+	- Subtract those numbers
+	- Multiply those numbers
+	- Divide those numbers
+	- Divide and get only ceil of the number
+	- Find modulus
+	- power of second number to applied on the first number
+2. String Operations
+	- concatenate two strings
+	- Print a string with double quotes in one of the sub strings
+	- Print a string in a new line character
+	- Print a string with '\n' and escape the same in the next line (don't use 'r')
+	- Print a string with '\n' and escape the same in the next line (use 'r')
+	- Print a string 5 times
+3. Search a file greater than given size matching the pattern
+4. Get current working directory
+5. Print all environment variables
+6. Check if path  exists
+7. Check if a file exists
+8. program to execute df command

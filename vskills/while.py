@@ -29,9 +29,20 @@ else:
 print('Done')
 
 running = True
+counter = 1
 while running:
+    print ("counter =" , counter)
     s = input("Enter any string and \"quit\" for quitting this program : ")
+    counter = counter + 1
     if s=="quit":
         break
+    if len(s) < 1:
+        print ("No number is Entered,loop will end.")
+        running = False
+    if len(s) < 2:
+        print ("Entered number is too small,loop hits continue...")
+        continue
+    print ("Statement below continue will be skipped if continue is executed")
     print ("length of the string is",len(s))
-print ("while loop with break is done")
+else:
+    print ("second while loop is also over. Else is getting executed as loop has ended. This does not get printed when break condition is met!!!")
