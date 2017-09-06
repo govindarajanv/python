@@ -1,3 +1,4 @@
+# Python exercises for practice
 1.  write a program to perform the following
 	- Get two numbers as input
 	- Add those numbers
@@ -8,12 +9,19 @@
 	- Find modulus
 	- power of second number to applied on the first number
 2. String Operations
+	- Find the length of a string
 	- concatenate two strings
 	- Print a string with double quotes in one of the sub strings
 	- Print a string in a new line character
 	- Print a string with '\n' and escape the same in the next line (don't use 'r')
 	- Print a string with '\n' and escape the same in the next line (use 'r')
 	- Print a string 5 times
+	- Print the 3 character from the given string
+	- Print the last but one character from the given string
+	- Print all characters starting from 3rd postion till the end
+	- Print all characters till 6th position
+	- Print all characters from 2nd to 4th positions
+	- print with an index of length  and -(length+1) and see how python reacts to it
 3. Search a file greater than given size matching the pattern
 4. Get current working directory
 5. Print all environment variables
