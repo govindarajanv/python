@@ -22,6 +22,8 @@
 	- Print all characters till 6th position
 	- Print all characters from 2nd to 4th positions
 	- print with an index of length  and -(length+1) and see how python reacts to it
+	- concate string in 3 different ways - using %s, join and +
+	- Check if a subsring 'os' is in 'centos'
 3. Search a file greater than given size matching the pattern
 4. Get current working directory
 5. Print all environment variables
