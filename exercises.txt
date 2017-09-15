@@ -24,9 +24,41 @@
 	- print with an index of length  and -(length+1) and see how python reacts to it
 	- concate string in 3 different ways - using %s, join and +
 	- Check if a subsring 'os' is in 'centos'
+	- find the position of string using find method
+	- Using find command to get a substring 'centos installed' in the string 'VM has centos installed'
+	- Replace 'centos' to 'CentOS'
+	- Remove whitespaces, only on left side and on right side.
+	- Use for loop to read string and print only non numerals 
 3. Search a file greater than given size matching the pattern
 4. Get current working directory
 5. Print all environment variables
 6. Check if path  exists
 7. Check if a file exists
 8. program to execute df command
+9. Modules
+	- subprocess - get the functons under this module
+		- check hostname of the system using subprocess's check_output functions
+		- Check disk usage and alert when it crosses a threshold
+		- Use dictionary to read active users and number of processes being run by each user (use ps -ef and subprocess)
+	- Install python pip and import boto3 module - AWS sdk for python
+	- import platform and get linux distribution and check and print the os using if,elif and else
+	- import random, generate a random number between 1 to 10 and print the level of expertise on the scale of 1 to 10 (0-4; low , 5-7, medium , >7 High)
+	- import csv module, read a csv file containing all VMs list, get the count of different operation systems
+	- import time, urllib2 create a function to download a web page and count lapsed time using decorators.
+10. Write a python program to print number of tries to get 3 heads in a row using while (without break), while and for loop
+11. List
+	- Create a list using range
+	- Create a composite list and append a string to the list
+	- find an element from that list
+	- remove an element and get its length
+	- Get the index of the element
+	- Add an element in the middle
+12. Write a function
+
+	- To accept a user id and print all processes run by him
+	- To accept an user id and key word to print both the total processes run by him and total processes matching the keyword
+13. Maintain same set of data across different containers set, list, dictionaries and Tuples. Try to add duplicates, modify them
+14. Try giving an invalid command to subprocess checkoutput and try to capture the exception information and print it on the screen
+15. Read a file and print line by one, read all lines at a time and print them one by one, use try, except and else blocks
+16. Create a class called 'Monitor', have functions like inspect, query, print and a sub class called ProcessMonitor and override query function and print variables using var method
+17. 
