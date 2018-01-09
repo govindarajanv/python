@@ -45,6 +45,7 @@
 	- import random, generate a random number between 1 to 10 and print the level of expertise on the scale of 1 to 10 (0-4; low , 5-7, medium , >7 High)
 	- import csv module, read a csv file containing all VMs list, get the count of different operation systems
 	- import time, urllib2 create a function to download a web page and count lapsed time using decorators.
+	- import json and parse chef environment json and print the details
 10. Write a python program to print number of tries to get 3 heads in a row using while (without break), while and for loop
 11. List
 	- Create a list using range
@@ -61,4 +62,7 @@
 14. Try giving an invalid command to subprocess checkoutput and try to capture the exception information and print it on the screen
 15. Read a file and print line by one, read all lines at a time and print them one by one, use try, except and else blocks
 16. Create a class called 'Monitor', have functions like inspect, query, print and a sub class called ProcessMonitor and override query function and print variables using var method
-17. 
+17. Implement a counter with normal function (using return) and a generator (using yield). Use next (variable) to see what is the output in each case
+18. Regular expressions
+	- go to /var/log/secure, write a program to get the ip address of users, parse ip, users and port
+19. 
