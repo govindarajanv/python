@@ -1,5 +1,14 @@
 # Python exercises for practice
-1.  write a program to perform the following
+1.	Write a program to perform the following
+	-	print "Hello World"
+	-	Display Python's list of keywords in python prompt
+	-	Single and multiline comments
+	-	perform an addition of three numbers as multiline statements and print the sum
+	-	Perform multiple assignments of variables in a single line of statement
+	-	execute mutliple statements in a line
+	-	print with '|' as a delimiter and '&' as end of line character
+	-	Accept user's name as input and greet him
+2.  write a program to perform the following
 	- Get two numbers as input
 	- Add those numbers
 	- Subtract those numbers
@@ -8,7 +17,7 @@
 	- Divide and get only ceil of the number
 	- Find modulus
 	- power of second number to applied on the first number
-2. String Operations
+3. String Operations
 	- Find the length of a string
 	- concatenate two strings
 	- Print a string with double quotes in one of the sub strings
