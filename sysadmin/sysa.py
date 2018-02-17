@@ -16,8 +16,8 @@ def getEnvDetails():
         while choice:
             os.system("clear")
             print("""
-            1. VT IQA
-            2. VT UAT
+            1. App IQA
+            2. App UAT
             3. Exit/Quit
 	    """)
 	    time
