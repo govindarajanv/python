@@ -1,5 +1,6 @@
 import os
 import time
+import paramiko
 class Query(object):
     def __init__(self, objective, environment):
         self.objective = objective
@@ -10,6 +11,32 @@ class Query(object):
         self.environment = environment
     def action(self):
         print ("actionizing %s from %s " % (self.objective, self.environment))
+	# Create the SSH client.
+        ssh = paramiko.SSHClient()
+	command = "df"
+	host = "10.1.1.30"
+	port = 22
+	username = "vagrant"
+	key = "/root/.ssh/id_rsa"
+	private_key = paramiko.RSAKey.from_private_key_file (key)
+	password = "vagrant"
+	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	ssh.connect(host, port, username, password, private_key)
+	# Send the command (non-blocking)
+        stdin, stdout, stderr = ssh.exec_command(command)
+
+        # Wait for the command to terminate
+        while not stdout.channel.exit_status_ready() and not stdout.channel.recv_ready():
+            time.sleep(1)
+
+        stdoutstring = stdout.readlines()
+        stderrstring = stderr.readlines()
+	for line in stdoutstring:
+          #print (line)
+	  sub_str = line.split(" ")
+          print ("%s%s" % (sub_str[len(sub_str)-1].strip().ljust(30) , sub_str[len(sub_str)-2].strip().ljust(30)))
+          #print (sub_str)
+		
 
 def getEnvDetails():
 	choice=True
