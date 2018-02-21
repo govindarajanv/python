@@ -9,14 +9,14 @@
 	-	print with '|' as a delimiter and '&' as end of line character
 	-	Accept user's name as input and greet him
 2.  write a program to perform the following
-	- Get two numbers as input
-	- Add those numbers
-	- Subtract those numbers
-	- Multiply those numbers
-	- Divide those numbers
-	- Divide and get only ceil of the number
-	- Find modulus
-	- power of second number to applied on the first number
+	- 	Get two numbers as input
+	- 	Add those numbers
+	- 	Subtract those numbers
+	- 	Multiply those numbers
+	- 	Divide those numbers
+	- 	Divide and get only ceil of the number
+	- 	Find modulus
+	- 	power of second number to applied on the first number
 3. String Operations
 	- Find the length of a string
 	- concatenate two strings

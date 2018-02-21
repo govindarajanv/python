@@ -1,6 +1,7 @@
 import os
 import time
 import paramiko
+
 class Query(object):
     def __init__(self, objective, environment):
         self.objective = objective
@@ -9,6 +10,7 @@ class Query(object):
         self.objective = objective
     def set_environment(self, environment):
         self.environment = environment
+
     def action(self):
         print ("actionizing %s from %s " % (self.objective, self.environment))
 	# Create the SSH client.
@@ -63,6 +65,7 @@ def getEnvDetails():
 	print (environment)
 	time.sleep(1)
 	return environment
+
 if __name__ == '__main__':
 	choice=True
 	while choice:
