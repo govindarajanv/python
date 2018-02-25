@@ -18,8 +18,10 @@
 	- 	Find modulus
 	- 	power of second number to applied on the first number
 3. String Operations
+	- Concatenate two strings using both '+' and ','
+	- Concatenate a string and an integer using '+' and ','
+	- addtion of a string and an integer by converting the string number to integer
 	- Find the length of a string
-	- concatenate two strings
 	- Print a string with double quotes in one of the sub strings
 	- Print a string in a new line character
 	- Print a string with '\n' and escape the same in the next line (don't use 'r')
