@@ -31,4 +31,8 @@ print (r"Please enter \n for new line character")
 print ("Calling out 5 times! " * 5)
 
 #Print the 3 character from the given string
+name = "Govindarajan"
+print (name[0:3])
 
+#Print the last but one character from the given string
+print (name[-2])
