@@ -40,6 +40,12 @@
 	- Replace 'centos' to 'CentOS'
 	- Remove whitespaces, only on left side and on right side.
 	- Use for loop to read string and print only non numerals 
+4. Variables
+	- Assign two variables simultaneously (packing and upacking)
+	- Assign a function to a variable
+5. Loop
+	- Create an infinite loop using while
+	- Print a number 10 times using while loop
 3. Search a file greater than given size matching the pattern
 4. Get current working directory
 5. Print all environment variables
