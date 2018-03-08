@@ -46,6 +46,8 @@
 5. Loop
 	- Create an infinite loop using while
 	- Print a number 10 times using while loop
+	- Create a for loop to iterate the list and print its contents one by one
+	- create a for loop to print numbers from 1 to 100 using range function
 3. Search a file greater than given size matching the pattern
 4. Get current working directory
 5. Print all environment variables
