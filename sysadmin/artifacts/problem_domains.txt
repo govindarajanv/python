@@ -1,0 +1,14 @@
+-	Regex and text processing
+-	sockets programming
+-	file compression
+-	sub process
+-	platform
+-	threads
+-	process
+-	pickle
+-	operations on XMLs
+-	operations on JSONs
+-	Managing DNS with python
+-	Apache log parser
+-	File transfer
+-	Remote login using ssh
