@@ -10,3 +10,5 @@ General instructions
 -	import the module; help(<module name>)
 -	import the module; dir(<module name>) to get the list of methods supported
 -	import the module; help(<module name>.<method name>)
+-	to install a module $pip install matplotlib
+-	to upgrade a module $pip install --upgrade matplotlib  //you might have to use absolute path
