@@ -14,6 +14,6 @@ if len(sys.argv) > 1:
 def main(arg):
     print ("inside main function",arg)
 
-
+#calling the main function
 main(sys.argv[0])
     
