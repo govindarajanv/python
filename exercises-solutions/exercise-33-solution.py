@@ -1,5 +1,6 @@
 #creating a window
 from tkinter import *
+from PIL import Image, ImageTk
 
 class Window(Frame):
 
@@ -24,15 +25,27 @@ class Window(Frame):
         top_menu.add_cascade(label='File', menu=file)
 
         edit = Menu(top_menu)
-        edit.add_command(label='Undo')
+        edit.add_command(label='Show Image',command=self.show_image)
+        edit.add_command(label='Show Text',command=self.show_text)
         top_menu.add_cascade(label='Edit', menu=edit)
 
+    def show_image(self):
+        load = Image.open('tea_estate.jpg') 
+        render = ImageTk.PhotoImage(load)
+        img = Label(self, image=render)
+        img.image = render
+        img.place(x=0,y=0)
+
+    def show_text(self):
+        text = Label(self, text="Hey, they are looking good")
+        text.pack()
 
 
     def client_exit(self):
         exit()
-        
 
+    def client_exit(self):
+        exit()
 rootWindow = Tk()
 rootWindow.geometry("400x300")
 app = Window(rootWindow)
