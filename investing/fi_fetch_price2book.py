@@ -97,21 +97,37 @@ def getListFromFile(filename):
     readFile.close()
     return stock_list
 
+def printVerdict(scrip_list,bfsi_flag=False):
+    for i in scrip_list:
+        scrip_code = str(i)
+        stock,pbv = getStatsFromVR(scrip_code)
+        if bfsi_flag == True:
+           pbv_max,pbv_min = max_min_PBV(scrip_code)
+        else:
+           pbv_max,pbv_min = max_min_PBV_Others(scrip_code)
+        verdict, potential = getVerdict(pbv,pbv_max, pbv_min)
+        print ("%s: %s with potential upside of %s     pbv_min:%s|pbv:%s|pbv_max:%s" % (stock, verdict, round(potential,2),pbv_min,pbv,pbv_max))
+
+
+############################################
+#  GOLD GRADE STOCKS
+############################################
 print ("Checking gold standard stocks...\n")
 
 #populate goldGrade_Bfsi
 goldGrade_Bfsi = getListFromFile('c:\goldGrade_Bfsi.txt')
+printVerdict(goldGrade_Bfsi,True)
+
 #populate goldGrade_Others
 goldGrade_Others = getListFromFile('c:\goldGrade_Others.txt')
-for i in goldGrade_Bfsi:
-    scrip_code = str(i)
-    stock,pbv = getStatsFromVR(scrip_code)
-    pbv_max,pbv_min = max_min_PBV(scrip_code)
-    verdict, potential = getVerdict(pbv,pbv_max, pbv_min)
-    print ("%s: %s with potential upside of %s     pbv_min:%s|pbv:%s|pbv_max:%s" % (stock, verdict, round(potential,2),pbv_min,pbv,pbv_max))
-for i in goldGrade_Others:
-    scrip_code = str(i)
-    stock,pbv = getStatsFromVR(scrip_code)
-    pbv_max,pbv_min = max_min_PBV_Others(scrip_code)
-    verdict, potential = getVerdict(pbv,pbv_max, pbv_min)
-    print ("%s: %s with potential upside of %s     pbv_min:%s|pbv:%s|pbv_max:%s" % (stock, verdict, round(potential,2),pbv_min,pbv,pbv_max))
+printVerdict(goldGrade_Others)
+
+############################################
+#  SILVER GRADE STOCKS
+############################################
+print ("\n\nChecking silver standard stocks...\n")
+
+#populate silverGrade_Others
+silverGrade_Others = getListFromFile('c:\silverGrade_Others.txt')
+printVerdict(silverGrade_Others)
+
