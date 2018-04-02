@@ -42,7 +42,7 @@ def max_min_PBV(stock):
         min_pb = java_script_min_pb.split(',')[1].strip().split("\'")[1]
         
     except Exception as e:
-        print ("Failure in the max_min_PBV method",e)
+        print ("Failure in the max_min_PBV method:%s:%s"%(e, stock))
     return max_pb, min_pb
 
 def max_min_PBV_Others(stock):
@@ -64,7 +64,7 @@ def max_min_PBV_Others(stock):
         min_pb = java_script_min_pb.split(',')[1].strip().split("\'")[1]
         
     except Exception as e:
-        print ("Failure in the max_min_PBV method",e)
+        print ("Failure in the max_min_PBV method:%s:%s"%(e,stock))
     return max_pb, min_pb
 
 
@@ -76,7 +76,7 @@ def getVerdict(pbv,pbv_max, pbv_min):
 
     verdict = 'HOLD'
     potential = (0.7 * maxval - current)/current  * 100
-    if current <= (1.3 * minval):
+    if current <= (1.2 * minval):
         verdict = 'BUY'
     elif current >= (0.7 * maxval):
         verdict = 'SELL'
@@ -106,7 +106,8 @@ def printVerdict(scrip_list,bfsi_flag=False):
         else:
            pbv_max,pbv_min = max_min_PBV_Others(scrip_code)
         verdict, potential = getVerdict(pbv,pbv_max, pbv_min)
-        print ("%s: %s with potential upside of %s     pbv_min:%s|pbv:%s|pbv_max:%s" % (stock, verdict, round(potential,2),pbv_min,pbv,pbv_max))
+        if verdict == 'BUY':
+            print ("%s: %s with potential upside of %s     pbv_min:%s|pbv:%s|pbv_max:%s" % (stock, verdict, round(potential,2),pbv_min,pbv,pbv_max))
 
 
 ############################################
@@ -115,8 +116,8 @@ def printVerdict(scrip_list,bfsi_flag=False):
 print ("Checking gold standard stocks...\n")
 
 #populate goldGrade_Bfsi
-goldGrade_Bfsi = getListFromFile('c:\goldGrade_Bfsi.txt')
-printVerdict(goldGrade_Bfsi,True)
+#goldGrade_Bfsi = getListFromFile('c:\goldGrade_Bfsi.txt')
+#printVerdict(goldGrade_Bfsi,True)
 
 #populate goldGrade_Others
 goldGrade_Others = getListFromFile('c:\goldGrade_Others.txt')
@@ -128,6 +129,6 @@ printVerdict(goldGrade_Others)
 print ("\n\nChecking silver standard stocks...\n")
 
 #populate silverGrade_Others
-silverGrade_Others = getListFromFile('c:\silverGrade_Others.txt')
-printVerdict(silverGrade_Others)
+#silverGrade_Others = getListFromFile('c:\silverGrade_Others.txt')
+#printVerdict(silverGrade_Others)
 
