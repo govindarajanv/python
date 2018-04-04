@@ -1,9 +1,10 @@
 # importing the required libraries
 import json
 import requests
+import statistics
  
 # api-endpoint
-URL = "https://api-global.morningstar.com//sal-service/v1/stock/valuation/v2/0P0000AXIE?access_token=jCPHZLykOCZtb5AldpQExsXL2BiI"
+URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0P0000AXIE?access_token=jCPHZLykOCZtb5AldpQExsXL2BiI"
  
 head = {"Accept":"applicaiton/json", "Content-type": "application/json", }
 	
@@ -20,6 +21,14 @@ data = r.json()
  
  
 list_from_json = data['Collapsed']['rows'][0]['datum']
-print (len(list_from_json))
+print (list_from_json)
 price_to_sales = [float(i) for i in list_from_json]
 print (sum(price_to_sales[:-3]))
+print ("Average PS:",statistics.mean(price_to_sales[:-3]))
+
+
+list_from_json = data['Collapsed']['rows'][1]['datum']
+print (list_from_json)
+price_to_earning = [float(i) for i in list_from_json]
+print (sum(price_to_earning[:-3]))
+print ("Average PE:",statistics.mean(price_to_earning[:-3]))
