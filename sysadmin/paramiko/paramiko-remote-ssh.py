@@ -23,6 +23,5 @@ scp = SCPClient(c.get_transport())
 # fetch from server
 scp.get('data.list')
 # push to server
-scp.get('D:\\code\\python\\sysadmin\\paramiko\\node.list')
-
+scp.get('D:/code/python/sysadmin/paramiko/node.list')
 c.close()
