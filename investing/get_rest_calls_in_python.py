@@ -32,3 +32,4 @@ print (list_from_json)
 price_to_earning = [float(i) for i in list_from_json]
 print (sum(price_to_earning[:-3]))
 print ("Average PE:",statistics.mean(price_to_earning[:-3]))
+#
