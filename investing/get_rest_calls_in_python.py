@@ -2,12 +2,15 @@
 import json
 import requests
 import statistics
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
 # api-endpoint
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="rygZXGRUs5GJwCyC2mPH8RbP15WB"
+access_token="zOGGwxBurJukw8aJ45LfUmjFFhjA"
 #URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0P0000AXIE?access_token="+ access_token
 URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0p0000hj9s?access_token="+ access_token
  
