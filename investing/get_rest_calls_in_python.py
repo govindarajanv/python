@@ -75,4 +75,4 @@ if (current_price_to_book < avg_price_to_book):
     possible_upside = (avg_price_to_book - current_price_to_book)/current_price_to_book *100
 
 print ("Verdict on is",decision)
-print ("Possible Upside is:",possible_upside)
+print ("Possible Upside is: ",possible_upside)
