@@ -20,7 +20,7 @@ Approach
 -	Update the launch configuration to use the AMI and Update the Auto Scaling group
 	-	as-create-launch-config $NEW_CONFIG_NAME --image-id ami-67890 --instance-type t1.micro --group $YOUR_GROUP  -monitoring-disabled
 	-	as-update-auto-scaling-group blog-cluster-group --launch-configuration blog-cluster-3
-	-	
--	
+	-	Insert/Update the sqlite db or S3/Dynamodb the newly launched instance details	
+-	point#4 is already taken care of
 	
 -	
