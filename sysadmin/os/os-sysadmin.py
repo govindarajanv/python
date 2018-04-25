@@ -24,7 +24,7 @@ os.mkdir('govind')
 
 #executing an OS command
 print ("Output of the OS command:[")
-os.system('dir /p')
+os.system('ls -lrt')
 print ("]")
 
 #printing name of the login user
