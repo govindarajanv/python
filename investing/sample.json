@@ -1,0 +1,307 @@
+{
+    "Collapsed": {
+        "rows": [
+            {
+                "label": "Price/Sales",
+                "salDataId": "price.sales.label",
+                "isQuantitative": false,
+                "datum": [
+                    "1.9494",
+                    "3.1537",
+                    "4.1275",
+                    "3.2299",
+                    "3.9331",
+                    "4.0282",
+                    "5.2447",
+                    "5.8082",
+                    "5.2892",
+                    "6.9095",
+                    "6.4162",
+                    "6.2573",
+                    "5.4452",
+                    "2.1493"
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Price/Earnings",
+                "salDataId": "price.earnings.label",
+                "isQuantitative": false,
+                "datum": [
+                    "20.9822",
+                    "43.304",
+                    "32.9987",
+                    "29.5183",
+                    "37.7799",
+                    "39.599",
+                    "55.3571",
+                    "54.2239",
+                    "45.477",
+                    "59.4405",
+                    "56.0288",
+                    "54.6416",
+                    "51.0764",
+                    "22.3214"
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Price/Cash Flow",
+                "salDataId": "price.cash.flow.label",
+                "isQuantitative": false,
+                "datum": [
+                    "17.2523",
+                    "44.2465",
+                    "25.9373",
+                    "32.6959",
+                    "51.3077",
+                    "39.6535",
+                    "51.5264",
+                    "71.3527",
+                    "36.6452",
+                    "72.7181",
+                    "72.175",
+                    "70.3881",
+                    "54.0618",
+                    "11.4732"
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Price/Book",
+                "salDataId": "price.book.label",
+                "isQuantitative": false,
+                "datum": [
+                    "8.7399",
+                    "14.3202",
+                    "16.1262",
+                    "9.6646",
+                    "15.4262",
+                    "12.0579",
+                    "15.9146",
+                    "15.8145",
+                    "12.2002",
+                    "14.3263",
+                    "14.3962",
+                    "14.0398",
+                    "14.9484",
+                    "3.1415"
+                ],
+                "subLevel": ""
+            }
+        ],
+        "columnDefs": [
+            "Calendar",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "Current",
+            "Q1",
+            "5-Yr",
+            "Index"
+        ],
+        "columnDefs_labels": [
+            "tabular.data.label.column.year",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "valuation.headers.current",
+            "valuation.headers.quarter1",
+            "valuation.headers.fiveyear",
+            "valuation.headers.index"
+        ],
+        "userType": null,
+        "footer": {
+            "asOfLabel": "As of",
+            "asOfDate": "2018-04-02T00:00:00.000",
+            "indexLabel": "Index:",
+            "indexName": "Morningstar India GR INR",
+            "enterpriseValueCurrency": "INR"
+        }
+    },
+    "Expanded": {
+        "rows": [
+            {
+                "label": "Price/Forward Earnings",
+                "salDataId": "price.forward.earnings.label",
+                "isQuantitative": false,
+                "datum": [
+                    null,
+                    null,
+                    "25.2525",
+                    "21.2314",
+                    "29.6736",
+                    "26.8097",
+                    null,
+                    null,
+                    null,
+                    null,
+                    "46.0829",
+                    "44.843",
+                    null,
+                    null
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "PEG Ratio",
+                "salDataId": "peg.ratio.label",
+                "isQuantitative": false,
+                "datum": [
+                    null,
+                    null,
+                    "1.4856",
+                    "1.2502",
+                    "1.605",
+                    "1.4491",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Earnings Yield %",
+                "salDataId": "earnings.yield.label",
+                "isQuantitative": false,
+                "datum": [
+                    "4.77",
+                    "2.31",
+                    "3.03",
+                    "3.39",
+                    "2.65",
+                    "2.53",
+                    "1.81",
+                    "1.84",
+                    "2.2",
+                    "1.68",
+                    "1.78",
+                    "1.83",
+                    "2",
+                    null
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Enterprise Value (Bil)",
+                "salDataId": "enterprise.value.label",
+                "isQuantitative": false,
+                "datum": [
+                    "87.50",
+                    "173.28",
+                    "276.99",
+                    "249.29",
+                    "421.10",
+                    "461.29",
+                    "707.05",
+                    "837.29",
+                    "838.84",
+                    "1101.22",
+                    "1092.83",
+                    "1065.54",
+                    "786.37",
+                    null
+                ],
+                "subLevel": "",
+                "orderOfMagnitude": "Bil"
+            },
+            {
+                "label": "Enterprise Value/EBIT",
+                "salDataId": "enterprise.value.ebit.label",
+                "isQuantitative": false,
+                "datum": [
+                    "13.3762",
+                    "26.5422",
+                    "22.0517",
+                    "19.4381",
+                    "24.7878",
+                    "25.4169",
+                    "35.8214",
+                    "35.2087",
+                    "28.8959",
+                    "38.5601",
+                    "36.509",
+                    "35.5974",
+                    "32.9138",
+                    null
+                ],
+                "subLevel": ""
+            },
+            {
+                "label": "Enterprise Value/EBITDA",
+                "salDataId": "enterprise.value.ebitda.label",
+                "isQuantitative": false,
+                "datum": [
+                    "12.2666",
+                    "23.8275",
+                    "20.6762",
+                    "17.8624",
+                    "22.9364",
+                    "22.8305",
+                    "31.6955",
+                    "31.5629",
+                    "25.9963",
+                    "34.3443",
+                    "32.6317",
+                    "31.8168",
+                    "29.4443",
+                    null
+                ],
+                "subLevel": ""
+            }
+        ],
+        "columnDefs": [
+            "Calendar",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "Current",
+            "Q1",
+            "5-Yr",
+            "Index"
+        ],
+        "columnDefs_labels": [
+            "tabular.data.label.column.year",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "valuation.headers.current",
+            "valuation.headers.quarter1",
+            "valuation.headers.fiveyear",
+            "valuation.headers.index"
+        ]
+    }
+}

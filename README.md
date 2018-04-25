@@ -10,3 +10,8 @@ General instructions
 -	import the module; help(<module name>)
 -	import the module; dir(<module name>) to get the list of methods supported
 -	import the module; help(<module name>.<method name>)
+-	to install a module $pip install matplotlib
+-	to upgrade a module $pip install --upgrade matplotlib  //you might have to use absolute path
+-	to install from eggs  python -m easy_install "C:\Pillow-4.0.0-py3.6-win-amd64.egg"
+-	installs
+-	For debugging: python -m pdb <python file> or import pdb and use pdb.set_trace()

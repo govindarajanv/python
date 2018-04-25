@@ -1,4 +1,5 @@
 import os
+import time
 
 #name of the operating system
 print ("Name of OS:", os.name)
@@ -29,5 +30,6 @@ print ("]")
 
 #printing name of the login user
 print ("Deleting the directory..")
+time.sleep(10)
 os.rmdir('govind')
 
