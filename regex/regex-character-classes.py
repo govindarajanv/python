@@ -49,6 +49,7 @@ This causes it to match any character other than the ones included.
 Other metacharacters such as $ and ., have no meaning within character classes. 
 The metacharacter ^ has no meaning unless it is the first character in a class
 """
+print ("\n\n")
 pattern = r"[^A-Z]"
 
 if re.search(pattern, "this is all quiet"):
