@@ -1,0 +1,34 @@
+1	come up with a regex to select the below texts, use www.regex101.com
+	ninjaahaha
+	ninja
+	bninja
+	ninjap
+	Ninja
+	NINJA
+	aaniNJa
+
+2	regex for the following
+	ninja
+	ginja
+	ninja
+
+3	regex to select the following
+	a000
+	b000
+	c000
+	ab00
+	ab000
+	1000
+	A00
+
+4	regex for matching any character followed by two zeros except for 'h' or 'H' or 'a'
+	Note: first four rows should be selected
+	p00
+	q00
+	R00
+	T00
+	h00
+	H00
+	a00
+	a12
+	b34

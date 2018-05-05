@@ -1,0 +1,4 @@
+1	/ninja/gi
+2	/[ng]inja/g
+3	/[abc1]00/gi
+4	/[^hH]00/g
