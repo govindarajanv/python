@@ -32,3 +32,90 @@
 	a00
 	a12
 	b34
+
+5	Select all the below expressions
+
+	b00
+	c00
+	d00
+	e00
+	f00
+	g00
+	h00
+	i00
+	j00
+
+6	Select all the below expressions
+
+	b00
+	C00
+	d00
+	E00
+	f00
+	G00
+	h00
+	I00
+	J00
+
+7	Match any number occuring zero or more times
+	
+	Note: No number entered should also be selected and whatever number entered should also be selected.
+
+8	Match any number occuring once or more than once
+	Note: If no number is entered, it should not be matched.
+
+	These number should all be matched
+	0
+	2
+	34
+	456
+	678
+	
+	Note: No number entered should also be selected and whatever number entered should also be selected.
+
+9	Match exactly 10 numbers like phone numbers
+
+10	Match all numbers with digits more than 3 or 4 or 5
+
+	0
+	2
+	34
+	456
+	6789
+	12345
+	6543210
+	03404
+	9344
+	234
+	12
+	9
+
+11	Match all numbers with digits with atleast 3 digits
+
+	0
+	2
+	34
+	456
+	6789
+	12345
+	6543210
+	03404
+	9344
+	234
+	12
+	9
+
+12	Replace the following with metacharacters but functionality should remain intact
+
+	[0-9]
+	[a-zA-Z0-9_]
+	spaces and tabs
+	only tabs
+
+13	Write a regex to match the below pattern
+	1 N
+	5	p
+
+14 	regex for the following
+	123 HELLO
+	167	Cooke
