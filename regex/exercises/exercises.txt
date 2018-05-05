@@ -119,3 +119,17 @@
 14 	regex for the following
 	123 HELLO
 	167	Cooke
+
+15	Use the below excerpt from wikipedia on Linux OS
+
+	Linux [9][10] is a family of free and open-source software operating systems built around the Linux kernel. Typically, Linux is packaged in a form known as a Linux distribution (or distro for short) for both desktop and server use. The defining component of a Linux distribution is the Linux kernel,[11] an operating system kernel first released on September 17, 1991, by Linus Torvalds.[12][13][14] Many Linux distributions use the word "Linux" in their name. The Free Software Foundation uses the name GNU/Linux to refer to the operating system family, as well as specific distributions, to emphasize that most Linux distributions are not just the Linux kernel, and that they have in common not only the kernel, but also numerous utilities and libraries, a large proportion of which are from the GNU project. This has led to some controversy
+
+	Use the following and understand the behaviour
+
+	-	\d
+	-	\d+
+	-	[0-9]
+	-	[0-9]+
+	-	[0-9].\s
+	-	[0-9]?\s
+	-		
