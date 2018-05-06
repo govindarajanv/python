@@ -133,3 +133,22 @@
 	-	[0-9].\s
 	-	[0-9]?\s
 	-		
+
+16	Use regex to select exactly a string with only 5 characters
+17	Understand how regex work if you enter the following
+	-	f|tail
+	-	(f|t)ail
+	-	[a-z]?ail
+
+18	Write a python program to perform the below tasks by reading inputs from the user
+	-	user name
+		-	must be alphanumeric and contains 5-12 characters
+	-	email
+		-	email must be a valid address like me@mydomain.com
+	-	password
+		-	password must be alphanumeric (@,_ and - are also allowed and length must be 8-20 characters
+	-	phone number
+		-	must be 10 digits
+	-	PAN Number
+		-	first 5 characters must be alphabets in uppercase and next 4 only digits and the last one again an alphabet in uppercase
+	
