@@ -14,3 +14,6 @@ print ("trouble".find('ro'))
 
 print ("TrouBle".lower())
 print ("pass" + "\nword")
+
+for i in "govind":
+    print (i)
