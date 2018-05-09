@@ -17,3 +17,18 @@ print ("pass" + "\nword")
 
 for i in "govind":
     print (i)
+
+if not "":
+    print ("True")
+if not "String":
+    print ("True")
+else:
+    print ("False")
+
+a = ""
+b = "boy"
+
+print (a or b)
+print (a and b)
+print (0 or 1 or 2)
+
