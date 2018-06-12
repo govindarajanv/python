@@ -10,7 +10,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="vDp5ATqCIMjhZEh7G2i35qtNPK8p"
+access_token="X5ZungzJx7KrAJHLN8rjJzpTBoXp"
 
 with open('stocks.txt', 'r') as stock_file:
     stocks = {}
@@ -85,10 +85,31 @@ for scrip, code in stocks.items():
     #####################################################
     decision = 'SELL'
     possible_upside = 0.00
-    if (current_price_to_book < avg_price_to_book):
-        decision = 'BUY'
+    buy_count = 0
+    sell_count = 0
+    if (current_price_to_book <= avg_price_to_book):
+        buy_count = buy_count + 1
+        decision = 'ACCUMULATE'
         possible_upside = (avg_price_to_book - current_price_to_book)/current_price_to_book *100
         print ("Possible Upside is: ",possible_upside)
+    else:
+        sell_count = sell_count + 1
+
+    if (current_price_to_sales <= avg_price_to_sales):
+        buy_count = buy_count + 1
+    else:
+        sell_count = sell_count + 1
+    if (current_price_to_earnings <= avg_price_to_earnings):
+        buy_count = buy_count + 1
+    else:
+        sell_count = sell_count + 1
+
+    if (buy_count == 3):
+        decision = 'STRONG BUY'
+    elif (buy_count == 1):
+        decision = 'REDUCE'
+    elif (sell_count == 3):
+        decision = 'STRONG SELL'
 
     print ("\n")
     print ("Verdict on " + scrip + " is",decision)
