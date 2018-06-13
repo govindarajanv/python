@@ -10,9 +10,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="X5ZungzJx7KrAJHLN8rjJzpTBoXp"
+access_token="ASsdjZDSxczbqltB72gGLbzF2uRL"
 
-with open('stocks.txt', 'r') as stock_file:
+with open('bronze.txt', 'r') as stock_file:
     stocks = {}
     for l in stock_file:  
         scrip,code = l.strip().split(':')
@@ -23,6 +23,10 @@ with open('stocks.txt', 'r') as stock_file:
             #stocks[scrip]=[code]
 
 #print (stocks)
+fileContent="--------------------------------------------------------------\n"
+file = open("result.txt","w")
+file.write(fileContent)
+file.close()
 print ("----------------------------------------------------------------\n")
 for scrip, code in stocks.items():
     URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/" + code + "?access_token="+ access_token
@@ -114,3 +118,9 @@ for scrip, code in stocks.items():
     print ("\n")
     print ("Verdict on " + scrip + " is",decision)
     print ("----------------------------------------------------------------\n")
+
+    #writing to a file
+    fileContent= scrip + " - " + decision + "\n"
+    file = open("result.txt","a+")
+    file.write(fileContent)
+    file.close()
