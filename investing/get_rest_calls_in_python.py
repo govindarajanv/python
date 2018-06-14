@@ -10,9 +10,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="ASsdjZDSxczbqltB72gGLbzF2uRL"
+access_token="gexBcimXAgo7dkGAQCeBPpLOaE7d"
 
-with open('bronze.txt', 'r') as stock_file:
+with open('abhinav.txt', 'r') as stock_file:
     stocks = {}
     for l in stock_file:  
         scrip,code = l.strip().split(':')
@@ -98,6 +98,7 @@ for scrip, code in stocks.items():
         print ("Possible Upside is: ",possible_upside)
     else:
         sell_count = sell_count + 1
+        possible_upside = 0
 
     if (current_price_to_sales <= avg_price_to_sales):
         buy_count = buy_count + 1
@@ -120,7 +121,7 @@ for scrip, code in stocks.items():
     print ("----------------------------------------------------------------\n")
 
     #writing to a file
-    fileContent= scrip + " - " + decision + "\n"
+    fileContent= scrip + " - " + decision + " - " + str(possible_upside) +  "\n"
     file = open("result.txt","a+")
     file.write(fileContent)
     file.close()
