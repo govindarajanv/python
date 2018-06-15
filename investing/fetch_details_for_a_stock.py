@@ -5,7 +5,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
-access_token="gexBcimXAgo7dkGAQCeBPpLOaE7d"
+access_token="XPEmmNgbxLlsvQJAmZacnW7rLSFm"
 URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0p00019zt6?access_token="+ access_token
 #URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0p0000c0py?access_token="+ access_token
  
