@@ -11,9 +11,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="gexBcimXAgo7dkGAQCeBPpLOaE7d"
+access_token="NUYAUZ1OAdc1cWHZZhkGah34Ii8D"
 
-with open('abhinav.txt', 'r') as stock_file:
+with open('bronze.txt', 'r') as stock_file:
     stocks = {}
     for l in stock_file:  
         scrip,code = l.strip().split(':')
@@ -27,8 +27,12 @@ with open('abhinav.txt', 'r') as stock_file:
 fileContent="--------------------------------------------------------------\n"
 file = open("result.txt","w")
 file.write(fileContent)
+fileContent= "stock".ljust(30) + " - " + "decision".ljust(15) + " - " + "potential_upside".ljust(5) +  "\n"
+file.write(fileContent)
+fileContent="--------------------------------------------------------------\n"
+file.write(fileContent)
 file.close()
-print ("----------------------------------------------------------------\n")
+#print ("----------------------------------------------------------------\n")
 for scrip, code in stocks.items():
     URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/" + code + "?access_token="+ access_token
     #URL = "https://api-global.morningstar.com/sal-service/v1/stock/valuation/v2/0p0000hj9s?access_token="+ access_token
@@ -57,7 +61,7 @@ for scrip, code in stocks.items():
     #print (list_from_json)
     price_to_sales = [float(i) for i in list_from_json if i is not None]
     #print (sum(price_to_sales[:-3]))
-    print ("Average PS:",statistics.mean(price_to_sales[:-3]))
+    #print ("Average PS:",statistics.mean(price_to_sales[:-3]))
     avg_price_to_sales = statistics.mean(price_to_sales[:-3])
     #
     #
@@ -65,30 +69,30 @@ for scrip, code in stocks.items():
     #print (list_from_json)
     price_to_earning = [float(i) for i in list_from_json if i is not None]
     #print (sum(price_to_earning[:-3]))
-    print ("Average PE:",statistics.mean(price_to_earning[:-3]))
+    #print ("Average PE:",statistics.mean(price_to_earning[:-3]))
     avg_price_to_earnings = statistics.mean(price_to_earning[:-3])
     #
     list_from_json = data['Collapsed']['rows'][3]['datum']
     #print (list_from_json)
     price_to_book = [float(i) for i in list_from_json if i is not None]
     #print (sum(price_to_book[:-3]))
-    print ("Average PB:",statistics.mean(price_to_book[:-3]))
+    #print ("Average PB:",statistics.mean(price_to_book[:-3]))
     avg_price_to_book = statistics.mean(price_to_book[:-3])
 
     #####################################################
     #   Get Current Values
     #####################################################
     current_price_to_sales = price_to_sales[-4]
-    print ("Current PS:",current_price_to_sales)
+    #print ("Current PS:",current_price_to_sales)
     current_price_to_earnings = price_to_earning[-4]
-    print ("Current PE:",current_price_to_earnings)
+    #print ("Current PE:",current_price_to_earnings)
     current_price_to_book = price_to_book[-4]
-    print ("Current PB:",current_price_to_book)
+    #print ("Current PB:",current_price_to_book)
 
     #####################################################
     #   Get Current Values
     #####################################################
-    decision = 'SELL'
+    decision = 'ACCUMULATE'
     possible_upside = 0.00
     buy_count = 0
     sell_count = 0
@@ -122,7 +126,9 @@ for scrip, code in stocks.items():
     print ("----------------------------------------------------------------\n")
 
     #writing to a file
-    fileContent= scrip + " - " + decision + " - " + str(possible_upside) +  "\n"
-    file = open("result.txt","a+")
-    file.write(fileContent)
-    file.close()
+    possible_upside = round(possible_upside,2)
+    if (decision != "STRONG SELL" and decision != "REDUCE"):
+    	fileContent= scrip.ljust(30) + " - " + decision.ljust(15) + " - " + str(possible_upside).ljust(5) +  "\n"
+    	file = open("result.txt","a+")
+    	file.write(fileContent)
+    	file.close()

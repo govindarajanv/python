@@ -1,68 +1,11 @@
 --------------------------------------------------------------
-Ambuja Cements - ACCUMULATE - 49.90165314206775
-ACC - ACCUMULATE - 13.49861216684265
-Shree Cement - REDUCE - 0
-Bajaj Auto - ACCUMULATE - 96.08357412758394
-Hero Motocorp - ACCUMULATE - 40.00638196975361
-Maruti Suzuki - STRONG SELL - 0
-Eicher Motors - REDUCE - 4.240557459320414
-BSE - STRONG BUY - 0.0
-NSE - ACCUMULATE - 27.67677330140789
-Cummins India - ACCUMULATE - 40.98499451643201
-ABB - REDUCE - 0
-Exide Industries - ACCUMULATE - 15.154912606142135
-Bosch India - REDUCE - 8.185180058140677
-Blue Dart - STRONG BUY - 63.76245402125856
-TCS - REDUCE - 3.013089483582249
-HCL - STRONG BUY - 23.68045871345211
-Oracle Financials - STRONG SELL - 0
-HDFC - STRONG BUY - 20.593355853858178
-HDFC Bank - STRONG SELL - 0
-Bajaj Finance - STRONG SELL - 0
-Kotak Mahindra - STRONG SELL - 0
-ICICI Lombard - STRONG BUY - 0.0
-HDFC Life - STRONG BUY - 0.0
-GE T&D - STRONG BUY - 6.973222867145251
-Wonderla Holidays - ACCUMULATE - 67.11160514123449
-Grindwell Norton - STRONG SELL - 0
-Siemens - ACCUMULATE - 36.38080717928785
-Larsen & Toubro - ACCUMULATE - 10.448484142655227
-Bharat Electronics - REDUCE - 0
-Nestle India - REDUCE - 5.055396713108689
-Colgate Palmolive - REDUCE - 39.42324519561518
-Godrej Consumers - STRONG SELL - 0
-Marico - STRONG SELL - 0
-Asian Paints - STRONG SELL - 0
-Berger Paints - STRONG SELL - 0
-Kansai Nerolac - STRONG SELL - 0
-Akzo Nobel - STRONG SELL - 0
-Symphony - STRONG SELL - 0
-Pidilite - STRONG SELL - 0
-Proctor & Gamble - STRONG SELL - 0
-Gillette India - STRONG SELL - 0
-GSK Consumer Healthcare - REDUCE - 20.59387310821306
-3M India - STRONG SELL - 0
-Hindustan Unilever - STRONG SELL - 0
-Britannia - REDUCE - 0
-Dabur India - REDUCE - 113.33239656992686
-Avenue Supermarts - STRONG BUY - 0.0
-AIA Engineering - STRONG SELL - 0
-CRISIL - ACCUMULATE - 5.591722186491343
-Honeywell Automation - STRONG SELL - 0
-Page Industries - STRONG SELL - 0
-Sun Pharma - ACCUMULATE - 59.49942175226424
-Abbott India - STRONG SELL - 0
-Sanofi Aventis - STRONG SELL - 0
-FDC - STRONG SELL - 0
-Natco Pharma - REDUCE - 0
-Merck - STRONG SELL - 0
-GSK Pharma - REDUCE - 0
-Goodyear India - STRONG SELL - 0
-MRF - STRONG SELL - 0
-EID Parry - ACCUMULATE - 24.250727057302885
-CDSL - STRONG BUY - 0.0
-Titan - STRONG SELL - 0
-Whirlpool India - STRONG SELL - 0
-Hawkins - REDUCE - 0
-NESCO - STRONG SELL - 0
-Concor - STRONG SELL - 0
+stock                          - decision        - potential_upside
+--------------------------------------------------------------
+Clariant Chemicals             - ACCUMULATE      - 93.25
+NHPC                           - STRONG BUY      - 39.26
+Banaras Beads                  - ACCUMULATE      - 13.44
+Hindustan Composites           - STRONG BUY      - 107.88
+NLC India                      - STRONG BUY      - 99.84
+United Nilgiri                 - ACCUMULATE      - 0    
+Neelamalai Agro                - ACCUMULATE      - 94.01
+Periakara Malai                - ACCUMULATE      - 0.16 
