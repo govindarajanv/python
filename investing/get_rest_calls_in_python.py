@@ -11,9 +11,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="NUYAUZ1OAdc1cWHZZhkGah34Ii8D"
+access_token="5TXz833oT7c52QJz2T3s81dvpsCT"
 
-with open('bronze.txt', 'r') as stock_file:
+with open('cadila.txt', 'r') as stock_file:
     stocks = {}
     for l in stock_file:  
         scrip,code = l.strip().split(':')
@@ -60,8 +60,9 @@ for scrip, code in stocks.items():
     list_from_json = data['Collapsed']['rows'][0]['datum']
     #print (list_from_json)
     price_to_sales = [float(i) for i in list_from_json if i is not None]
+    print (price_to_sales) 
     #print (sum(price_to_sales[:-3]))
-    #print ("Average PS:",statistics.mean(price_to_sales[:-3]))
+    print ("Average PS:",statistics.mean(price_to_sales[:-3]))
     avg_price_to_sales = statistics.mean(price_to_sales[:-3])
     #
     #
@@ -69,25 +70,25 @@ for scrip, code in stocks.items():
     #print (list_from_json)
     price_to_earning = [float(i) for i in list_from_json if i is not None]
     #print (sum(price_to_earning[:-3]))
-    #print ("Average PE:",statistics.mean(price_to_earning[:-3]))
+    print ("Average PE:",statistics.mean(price_to_earning[:-3]))
     avg_price_to_earnings = statistics.mean(price_to_earning[:-3])
     #
     list_from_json = data['Collapsed']['rows'][3]['datum']
     #print (list_from_json)
     price_to_book = [float(i) for i in list_from_json if i is not None]
     #print (sum(price_to_book[:-3]))
-    #print ("Average PB:",statistics.mean(price_to_book[:-3]))
+    print ("Average PB:",statistics.mean(price_to_book[:-3]))
     avg_price_to_book = statistics.mean(price_to_book[:-3])
 
     #####################################################
     #   Get Current Values
     #####################################################
     current_price_to_sales = price_to_sales[-4]
-    #print ("Current PS:",current_price_to_sales)
+    print ("Current PS:",current_price_to_sales)
     current_price_to_earnings = price_to_earning[-4]
-    #print ("Current PE:",current_price_to_earnings)
+    print ("Current PE:",current_price_to_earnings)
     current_price_to_book = price_to_book[-4]
-    #print ("Current PB:",current_price_to_book)
+    print ("Current PB:",current_price_to_book)
 
     #####################################################
     #   Get Current Values

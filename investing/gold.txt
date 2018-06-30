@@ -1,14 +1,50 @@
+3M India:0p0000bp80
 ABB:0p0000c20b
-Esab India:0p0000aunx
-Accelya Kale:0p0000c0va
-Siemens India:0p0000cllm
-Ambuja Cements:0p0000b269
+Abbott India:0p0000bgsh
 ACC:0p0000b89u
+Accelya Kale:0p0000c0va
+Akzo Nobel:0p0000cd8c
+Ambuja Cements:0p0000b269
+Asian Paints:0p0000axie
+Bajaj Auto:0p0000hj9s
+Bajaj Holdings:0p0000am0r
+BASF India:0p0000anzm
+Bata India:0p0000b2bc
+Bayer Crop Science:0p0000c1bj
+Berger Paints:0p0000bavz
+Blue Dart:0p0000b0d5
+Britannia:0p0000bbos
+BSE:0p00019p2f
+Cadila Healthcare:0p0000cezz
 Can Fin Homes:0p0000bjll
+CDSL:0p0001b2rr
 City Union Bank:0p0000bfuz
-TVS Srichakra:0p0000bey8
-Ultratech Cement:0p0000bxyp
-Shree Cement:0p0000bc2r
+Colgate Palmolive:0p0000brvz
+Container Corporation:0p0000c7ju
+CRISIL:0p0000btvc
 Cummins India:0p0000cj5a
+Dabur India:0p0000al77
+Eicher Motors:0p0000bu09
+Esab India:0p0000aunx
+Emami:0p0000bu09
+FDC:0p0000bax9
 GE T&D:0p0000cerr
 Rallis India:0p0000caqy
+Shree Cement:0p0000bc2r
+Siemens India:0p0000cllm
+TVS Srichakra:0p0000bey8
+Ultratech Cement:0p0000bxyp
+Gillette India:0p0000c28i
+Goodyear India:0p0000b6lb
+Grindwell Norton:0p0000c1ej
+GSK Consumer:0p0000artk
+GSK Pharma:0p0000bpai
+Havells India:0p0000ahiq
+HCL Tech:0p0000cj48
+HDFC:0p0000c85f
+HDFC Bank:0p0000ars7
+HDFC Life:0p0001c8gb
+Hero Motocorp:0p0000cd67
+Honeywell Automation:0p0000bsfc
+HUL:0p0000c9f2
+ICICI Lombard:0p0001boot
