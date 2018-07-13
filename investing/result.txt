@@ -1,4 +1,14 @@
 --------------------------------------------------------------
 stock                          - decision        - potential_upside
 --------------------------------------------------------------
-Cadila Healthcare              - STRONG BUY      - 42.89
+Ambuja Cements                 - ACCUMULATE      - 53.28
+Bajaj Auto                     - ACCUMULATE      - 83.13
+NSE                            - STRONG BUY      - 31.85
+Cummins India                  - STRONG BUY      - 46.98
+Exide Industries               - ACCUMULATE      - 11.16
+HDFC                           - ACCUMULATE      - 13.8 
+Sun Pharma                     - ACCUMULATE      - 53.31
+EID Parry                      - ACCUMULATE      - 25.14
+ICICI Lombard                  - STRONG BUY      - 0.0  
+Avenue Supermarts              - STRONG BUY      - 0.0  
+CRISIL                         - ACCUMULATE      - 6.12 

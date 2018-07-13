@@ -11,9 +11,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #####################################################
 #   Query the source to download the data
 #####################################################
-access_token="5TXz833oT7c52QJz2T3s81dvpsCT"
+access_token="1EMesBPy3NnaSgTPHGce5RAukkwt"
 
-with open('cadila.txt', 'r') as stock_file:
+with open('bluechip.txt', 'r') as stock_file:
     stocks = {}
     for l in stock_file:  
         scrip,code = l.strip().split(':')
